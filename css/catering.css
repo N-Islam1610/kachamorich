@@ -1,0 +1,14 @@
+.catering-content{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  align-items:center;
+}
+.catering-content img{
+  max-width:400px;
+  border-radius:var(--radius);
+}
+.catering-content p{
+  max-width:600px;
+}

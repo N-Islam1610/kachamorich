@@ -1,0 +1,40 @@
+/* Contact Section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+}
+.contact-info img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.contact-form {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.contact-form button {
+  background: #e63946;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.contact-form button:hover {
+  background: #c51f2f;
+}
