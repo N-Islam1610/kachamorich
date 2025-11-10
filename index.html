@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kachamorich - Bengali Restaurant NYC</title>
 
-  <!-- Global Styles (fonts, buttons, body) -->
-  <link rel="stylesheet" href="css/global.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-  <!-- Section Styles -->
+  <!-- Global & Section Styles -->
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/catering.css">
@@ -31,16 +32,22 @@
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="header-social">
+        <a href="https://www.tiktok.com/@kachamorich" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/kachamorich" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/kachamorich" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/16467368580" class="whatsapp-order" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="parallax">
+  <section id="hero">
     <div class="hero-content fade-in">
       <h1>Welcome to Kachamorich</h1>
       <p>Authentic Bengali Cuisine in the Heart of NYC</p>
-      <a href="#menu" class="btn btn-primary">Explore Menu</a>
-      <img src="images/thali1.jpg" alt="Hero Image" class="hero-image">
+      <a href="#menu" class="btn">Explore Menu</a>
+      <img src="images/thali1.jpg" alt="Bengali Thali" class="hero-image">
     </div>
   </section>
 
@@ -49,17 +56,17 @@
     <h2 class="fade-in">Our Menu</h2>
     <div class="menu-grid">
       <div class="menu-item fade-in">
-        <img src="images/sorshe-ilish.jpg" alt="Dish 1">
+        <img src="images/sorshe-ilish.jpg" alt="Shorshe Ilish">
         <h3>Shorshe Ilish</h3>
         <p>Hilsa in mustard sauce, authentic Bengali flavor.</p>
       </div>
       <div class="menu-item fade-in">
-        <img src="images/Malabar chicken curry 16.JPG" alt="Dish 2">
+        <img src="images/Malabar chicken curry 16.JPG" alt="Chicken Rezala">
         <h3>Chicken Rezala</h3>
         <p>Rich Mughlai-inspired chicken curry.</p>
       </div>
       <div class="menu-item fade-in">
-        <img src="images/Chingri-Macher-Malai-Curry-Photo-02.webp" alt="Dish 3">
+        <img src="images/Chingri-Macher-Malai-Curry-Photo-02.webp" alt="Chingri Malai Curry">
         <h3>Chingri Malai Curry</h3>
         <p>Delicious prawn curry in coconut milk.</p>
       </div>
@@ -67,11 +74,76 @@
   </section>
 
   <!-- Catering Section -->
-  <section id="catering" class="section catering-section-bg parallax">
-    <h2 class="fade-in">Catering Services</h2>
-    <div class="catering-content fade-in">
-      <img src="images/catering.jpg" alt="Catering Service">
-      <p>We cater weddings, corporate events, and special occasions. Customize your menu to your taste. Perfect for offices and private parties!</p>
+  <section id="catering" class="section catering-section-bg">
+    <h2 class="fade-in">Catering Menu</h2>
+    <p class="catering-subtitle">Halal, Homestyle, and Authentic Desi Flavors for your events.</p>
+    <div class="catering-menu-container fade-in">
+      <div class="catering-column">
+        <h3>Appetizers <span>(Half Tray)</span></h3>
+        <ul>
+          <li>Euchka w/ Chotpot <span>$40</span></li>
+          <li>Chicken Lollipop <span>$55</span></li>
+          <li>Shingara (Beef/Chicken) <span>$40</span></li>
+          <li>Beef/Chicken Kabab Skewers <span>$60</span></li>
+          <li>Mixed Pakora Platter <span>$35</span></li>
+          <li>Vegetable or Egg Roll <span>$40</span></li>
+        </ul>
+        <h3>Sides & Breads</h3>
+        <ul>
+          <li>Roti/Naan (20 pcs) <span>$25</span></li>
+          <li>Paratha (20 pcs) <span>$30</span></li>
+          <li>Boiled Egg (12 pcs) <span>$15</span></li>
+          <li>Fried Egg (12 pcs) <span>$20</span></li>
+          <li>Green Salad + Lemon <span>$20</span></li>
+          <li>Raita (Yogurt Sauce) <span>$15</span></li>
+          <li>Achar (Pickles) <span>$10</span></li>
+        </ul>
+      </div>
+      <div class="catering-column">
+        <h3>Main Dishes <span>(Full Tray)</span></h3>
+        <ul>
+          <li>Kacchi Biryani (Goat) <span>$180</span></li>
+          <li>Chicken Tehari <span>$130</span></li>
+          <li>Beef Kala Bhuna <span>$160</span></li>
+          <li>Chicken Roast (Deshi) <span>$150</span></li>
+          <li>Beef Rezala <span>$150</span></li>
+          <li>Chicken Curry (Bone-in) <span>$120</span></li>
+          <li>Vegetable Khichuri <span>$100</span></li>
+        </ul>
+        <h3>Desserts</h3>
+        <ul>
+          <li>Firni <span>$40 / $75</span></li>
+          <li>Roshmalai <span>$50 / $90</span></li>
+          <li>Gulab Jamun <span>$45</span></li>
+        </ul>
+        <h3>Drinks</h3>
+        <ul>
+          <li>Borhani (1 Gallon) <span>$30</span></li>
+          <li>Mango Lassi (1 Gallon) <span>$35</span></li>
+          <li>Masala Chai (Per Thermos) <span>$25</span></li>
+          <li>Soft Drinks & Water <span>$12-18</span></li>
+        </ul>
+      </div>
+      <div class="catering-column">
+        <h3>Catering Packages</h3>
+        <div class="package">
+          <h4>Basic <span>$15-18/person</span></h4>
+          <p>1 Appetizer, 1 Rice Dish, 1 Meat Curry, 1 Side + Dessert</p>
+        </div>
+        <div class="package">
+          <h4>Standard <span>$22-25/person</span></h4>
+          <p>2 Appetizers, 2 Main Dishes, 1 Veg Dish, Naan/Paratha + Raita, Dessert + Bornani</p>
+        </div>
+        <div class="package">
+            <h4>Deluxe <span>$30-35/person</span></h4>
+            <p>Customizable premium options including server and delivery. Call to inquire!</p>
+        </div>
+         <div class="catering-contact">
+            <h3>Ready to Order?</h3>
+            <p>Call us for your next event!</p>
+            <a href="tel:646-736-8580" class="btn">📞 (646) 736-8580</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -90,34 +162,33 @@
     <div class="contact-container fade-in">
       <div class="contact-info">
         <img src="images/contact.jpg" alt="Contact Image">
-        <p>Email: info@kachamorich.com</p>
-        <p>Phone: +1 (212) 555-1234</p>
-        <p>Address: NYC, New York</p>
+        <p><i class="fas fa-envelope"></i> Email: info@kachamorich.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +1 (212) 555-1234</p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: NYC, New York</p>
       </div>
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
         <textarea placeholder="Message" rows="5" required></textarea>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-social">
+        <a href="https://www.tiktok.com/@kachamorich" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/kachamorich" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/kachamorich" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p>&copy; 2025 Kachamorich. All Rights Reserved.</p>
+      <p class="whatsapp-footer">
+        <a href="https://wa.me/16467368580" target="_blank"><i class="fab fa-whatsapp"></i> Order on WhatsApp: (646) 736-8580</a>
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
-  <!-- Header -->
-  <header class="main-header fade-in">
-    <div class="header-container">
-      <div class="logo">
-        <span class="logo-icon">🌶️</span>
-        <span class="logo-text">Kachamorich</span>
-      </div>
-      <nav class="main-nav">
-        <a href="#hero">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#catering">Catering</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>

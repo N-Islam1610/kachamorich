@@ -1,14 +1,102 @@
-.catering-content{
-  display:flex;
-  flex-wrap:wrap;
-  gap:20px;
-  justify-content:center;
-  align-items:center;
+/* Catering Section Styles */
+.catering-section-bg {
+  background-color: #fff;
 }
-.catering-content img{
-  max-width:400px;
-  border-radius:var(--radius);
+
+.catering-subtitle {
+    max-width: 600px;
+    margin: -15px auto 40px auto;
+    font-size: 1.1rem;
+    color: #555;
 }
-.catering-content p{
-  max-width:600px;
+
+.catering-menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.catering-column h3 {
+  color: #c0392b;
+  border-bottom: 2px solid #c0392b;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.catering-column h3 span {
+    font-size: 0.9rem;
+    color: #777;
+    font-weight: normal;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.catering-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.catering-column li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+
+.catering-column li span {
+  font-weight: bold;
+  color: #333;
+}
+
+.package {
+  background-color: #f9f9f9;
+  border-left: 4px solid #c0392b;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.package h4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.package p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+.catering-contact {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #c0392b;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.catering-contact h3 {
+    color: #fff;
+    border-bottom: none;
+    justify-content: center;
+}
+
+.catering-contact .btn {
+    background: #fff;
+    color: #c0392b;
+}
+
+.catering-contact .btn:hover {
+    background: #eee;
 }
