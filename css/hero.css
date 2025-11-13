@@ -10,6 +10,18 @@
   box-shadow: 0 8px 32px rgba(60, 60, 60, 0.18);
   overflow: hidden;
   text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 216, 79, 0.05), transparent 70%);
+  pointer-events: none;
 }
 
 .hero-content {
@@ -19,6 +31,39 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
   max-width: 600px;
   margin: 0 auto;
+  animation: bounceIn 0.9s ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  animation: slideInUp 0.8s ease-out;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 216, 79, 0.3);
+}
+
+.hero-content p {
+  animation: slideInUp 1s ease-out;
+  animation-delay: 0.2s;
+  font-size: 1.3rem;
+  margin: 20px 0;
+  color: #e0f7e4;
+}
+
+.hero-content .btn {
+  animation: slideInUp 1.2s ease-out;
+  animation-delay: 0.4s;
+  display: inline-block;
+  background: linear-gradient(90deg, #00d84f 0%, #00b84d 100%);
+  color: #0d2b2b;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+}
+
+.hero-content .btn:hover {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 216, 79, 0.4);
 }
 
 .hero-image {
@@ -30,4 +75,13 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   border: 3px solid rgba(255, 255, 255, 0.2);
   opacity: 0.92;
+  animation: slideInUp 1.4s ease-out;
+  animation-delay: 0.6s;
+  transition: all 0.4s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+  opacity: 1;
+  box-shadow: 0 8px 30px rgba(0, 216, 79, 0.25);
 }
